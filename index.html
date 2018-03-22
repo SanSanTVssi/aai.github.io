@@ -1,0 +1,390 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Главная</title>
+    <link rel="shortcut icon" type="x-icon" href="../../images/icon.jpg">
+    <!--<link rel="stylesheet" type="text/css" href="CSS/style.css" media="all">
+    <link rel="stylesheet" type="text/css" href="CSS/adaptive_style.css" media="all">
+    <link rel="stylesheet" type="text/css" href="CSS/animation.css" media="all">-->
+
+    <style type="text/css">
+        /*Fon.css
+-------------------------------------------------------------------------------------------*/
+        body {
+            background: url(images/f.jpg) no-repeat;
+            -moz-background-size: 150%;
+            -webkit-background-size: 150%;
+            -o-background-size: 150%;
+            background-size: 150%;
+        }
+        /*<!--Style.css-->
+-------------------------------------------------------------------------------------------*/
+        body {
+            margin: 0;
+            padding: 0;
+            font: Cambria Math, Cambria, Arial, Calibri;
+        }
+        a {
+            text-decoration: none
+        }
+        /*Шапка*/
+        /*Header*/
+div.header {width: 1000px;margin: 0 auto;background-color: #004777; border-radius: 4px;}
+div.midhed {background: rgba(0, 0, 0, 0); background-size: 166px 75px;}
+div.midhed img:hover{background: radial-gradient( rgba(118, 188, 248, 0.7) 30px,#004777 85px,transparent 85px) 5px no-repeat; background-size: 166px 85px;}
+div.search input { margin: 40px 20px 0px 0px; width: 650px;float: right;border-radius: 5px;}
+        /*Гл.Меню*/
+        div.midmenu {
+            width: 1000px;
+            margin: 5px auto;
+            background: #008080;
+            border: 4px solid #008080;
+            border-right: none;
+            border-left: none;
+            border-radius: 5px;
+        }
+        div.menu ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-align: center;
+        }
+        div.menu ul li {
+            display: inline-block;
+            margin: 0 30px;
+            font: 20px/25px Cambria Math, Cambria;
+            font-weight: bold;
+        }
+        div.menu ul li a {
+            color: white;
+            text-shadow: 4px 4px 14px #0b4455;
+        }
+        div.menu ul li a:hover {
+            color: #6a0090;
+            text-shadow: 0px 0px 0px #0b4455;
+            transition: all 0.15s
+        }
+        /*Контент*/
+        div.c_fon {
+            width: 1000px;
+            margin: 0px auto;
+            background: #bdd9f1;
+            border-radius: 5px;
+            border-top: none;
+            float: center;
+            height: 700px;
+        }
+        /*div.c_fon hr.line{border:none; border-bottom: 1px dashed #748589}*/
+        div.c_block {
+            width: 440px;
+            float: left;
+            margin: 10px 0 0 40px;
+            box-shadow: 1px 1px 5px #777;
+            border-radius: 5px;
+        }
+        div.c_block:nth-of-type(even) {
+            float: right;
+            box-shadow: 1px 1px 5px #777;
+            margin: 10px 40px 0 0;
+            border-radius: 5px;
+        }
+        div.c_text {
+            background: #f0ddbe;
+            border: 4px solid #ccc;
+            border-radius: 7px;
+            color: #252525;
+        }
+        div.c_text img {
+            box-shadow: 1px 1px 5px #777;
+            border-radius: 5px;
+        }
+        div.c_text a h3 {
+            box-shadow: 1px 1px 5px #777;
+            font-size: 20px;
+            text-align: center;
+            border: 4px solid #004777;
+            background: #004777;
+            color: white;
+            border-radius: 5px;
+            margin: 0px 0px 0px;
+        }
+        div.c_text:hover a h3 {
+            box-shadow: 1px 1px 5px #777;
+            text-align: center;
+            border: 4px solid #ff5733;
+            background: #ff5733;
+            color: white;
+            border-radius: 5px;
+            font: 25px/25px;
+            transition: all 0.15s
+        }
+        div.c_text p {
+            font: 20px/20px Arial, Calibri;
+            text-align: center;
+            margin: 4px 0px 8px;
+            font-weight: bold;
+            line-height: 20px;
+            text-shadow: 1px 1px 0 #fff.;
+            color: #252525;
+        }
+        div.c_text_block {
+            width: 912px;
+            float: left;
+            margin: 10px 0 0 40px;
+            box-shadow: 1px 1px 5px #777;
+            border-radius: 5px;
+            border: 4px solid #ccc;
+            background: #f0ddbe;
+            color: #252525;
+        }
+        div.c_text_block h2 {
+            margin: 5px 5px 10px 10px;
+            font: 25px/24px Cambria;
+            font-weight: bold;
+            text-align: center;
+        }
+        div.c_text_block h3 {
+            margin: 5px 5px 10px 10px;
+            font: 20px/20px Cambria;
+            font-weight: bold;
+            text-align: center;
+        }
+        div.c_text_block p {
+            margin: 5px 5px 0px 10px;
+            font: 24/24px Cambria;
+            font-style: oblique;
+            text-align: center;
+        }
+        div.clear {
+            clear: both;
+        }
+        /*Подвал*/
+        div.midfoot {
+            margin: 5px auto;
+            width: 1000px;
+            height: 100%;
+            float: none;
+        }
+        div.f_block_text {
+            width: 992px;
+            background: #bdd9f1;
+            border: 4px solid #ccc;
+            background: #f0ddbe;
+            border-radius: 5px;
+        }
+        div.f_block_text p {
+            margin: 0px 20px 0px 0px;
+            font: 20/20px Arial, Calibri;
+            font-weight: bold;
+            text-align: center;
+            color: #252525;
+        }
+        /*<!--Anmation.CSS-->
+-------------------------------------------------------------------------------------------*/
+        div.c_text a h3 {
+            transition: all 0.20s
+        }
+        div.c_text:hover a h3 {
+            transition: all 0.15s;
+            transition: all 0.15s
+        }
+        /*div.c_text:hover{transform: scale(1.10);transition: all  0.15s}*/
+        div.c_text img {
+            transition: all 0.20s
+        }
+        div.c_text:hover img {
+            transform: scale(1.10) rotate(2deg);
+            transition: all 0.15s
+        }
+        div.c_block:nth-of-type(even):hover div.c_text img {
+            transform: scale(1.10) rotate(-2deg)
+        }
+        /*<!--Adaptive_style.css-->
+-------------------------------------------------------------------------------------------*/
+        @media screen and (max-width: 1000px) {
+            body {
+                -moz-background-size: 200%;
+                -webkit-background-size: 200%;
+                -o-background-size: 200%;
+                background-size: 200%;
+            }
+            div.header {
+                width: 95%;
+            }
+            div.search input {
+                width: 50%;
+                /*margin-left:2%; margin-right:auto; margin-top: 20px; float: none;*/
+            }
+            div.midmenu {
+                width: 95%;
+            }
+            div.c_fon {
+                width: 95%;
+            }
+            div.c_block {
+                width: 40%;
+                margin: 10px 0 0 3.9%;
+                ;
+                float: left;
+            }
+            div.c_block:nth-of-type(even) {
+                float: right;
+                margin: 10px 3.9% 0 0;
+            }
+            div.c_text a h3 {
+                width: 96%;
+                font-size: 99%;
+            }
+            div.c_text img {
+                width: 100%;
+                height: 60%;
+            }
+            div.c_text p {
+                font-size: 99%;
+            }
+            div.c_text_block {
+                width: 91%;
+                margin: 10px 95% 0 4%
+            }
+            div.c_text_block p {
+                font-size: 99%;
+            }
+            /*подвал\нормально\*/
+            div.midfoot {
+                width: 94%;
+                height: 100%;
+                float: none;
+                margin: 5px 2.49004%
+            }
+            div.f_block_text {
+                width: 100%;
+            }
+            @media screen and (max-width: 600px) {
+                div.search input {
+                    width: 95%;
+                    margin-left: 2%;
+                    margin-right: auto;
+                    margin-top: 20px;
+                    float: none;
+                }
+                body {
+                    -moz-background-size: 250%;
+                    -webkit-background-size: 250%;
+                    -o-background-size: 250%;
+                    background-size: 250%;
+                }
+                div.c_block,
+                div.c_block:nth-of-type(even) {
+                    float: none;
+                    margin: 5px auto 0px auto;
+                    width: 92%;
+                    margin: 5px 4.9041244%
+                }
+                div.c_fon {
+                    height: 1000px
+                }
+            }
+}
+    </style>
+    <!--==========================================================================================-->
+
+</head>
+
+<body style="background-attachment:fixed" topmargin="0">
+
+    <!--Шапка-->
+    <div class="header">
+        <div class="midhed">
+            <header>
+                <div class="search">
+                    <input type="" name="" value="search">
+                </div>
+                <img src="images/logotype new year.png" alt="Soft Store" title="logotype" height="70">
+            </header>
+        </div>
+    </div>
+
+    <!--Главное меню-->
+    <div class="menu">
+        <div class="midmenu">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a>
+                    </li>
+                    <li><a href="Libraries.html">Библиотеки</a>
+                    </li>
+                    <li><a href=#>Android market</a>
+                    </li>
+                    <li><a href="winstore.html">Windows store</a>
+                    </li>
+                    <li><a href=#>Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!--Контент-->
+    <div class="content">
+        <div class="midcon">
+            <div class="c_fon">
+                <div class="c_text_block">
+                    <section>
+                        <h2>Привет всем !</h2>
+                        <p>На этом сайте вы можете скачать уже взломанные игры, можете смотреть обзоры, скачать оригинальные игры и программы для Android абсолютно бесплатно. И помните, это не для нас, а для вас. Теперь и для Windows.</p>
+                    </section>
+                </div>
+                <div class="clear"></div>
+                <div class="c_block">
+                    <div class="c_text">
+                        <section>
+                            <a href=#>
+                                <div class="img">
+                                    <img src="images/am.jpg" height="243" alt="Android market">
+                                </div>
+                                <p>Здесь вы можете скачать всякое для Android!</p>
+                                <h3>Перейти в Androind Market</h3>
+                            </a>
+                        </section>
+                    </div>
+                </div>
+                <div class="c_block">
+                    <div class="c_text">
+                        <section>
+                            <a href="winstore.html">
+                                <img src="images/ws.png" height="243" alt="Windows store">
+                                <p>Здесь вы можете скачать всякое для Windows!</p>
+                                <h3>Перейти в Windows Store</h3>
+                            </a>
+                        </section>
+                    </div>
+                </div>
+                <div class="c_text_block">
+                    <h2>Информация</h2>
+                    <p>Этот сайт не является элементом какого-либо авторского права. Копирование разрешено и поощряется. Сайт не является пиратским. Этот сайт является наследником сайтов: <a href="http://f-d-san.16mb.com/" target="_blank">f-d-san.16mb.com</a> и
+                        <br> <a href="http://sansanil2002.wixsite.com/android-download-" target="_blank">sansanil2002.wixsite.com/android-download-</a>
+                    </p>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <!--Подвал-->
+    <div class="footer">
+        <div class="midfoot">
+            <section>
+                <div class="f_block_text">
+                    <p>Created by SanSanTV ssi
+                        <br>Date of relise 24.12.2017
+                        <br>©2017 Soft-Store</p>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>
